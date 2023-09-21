@@ -17,20 +17,48 @@ body * {
 .main-login{
 	width: 100vw;
 	height: 100vh;
-	background: #D3D3D3;
+	background: #201b2c;
 	display: flex;
 	justify-content: center;
 	align-items: center;
 
 }
+
+.tabela{
+	
+	background-color:#DCDCDC ;
+	border-radius: 10px;
+	
+	
+	
+	box-shadow: 0px 10px 40px #00000056;
+	
+
+}
+.tabela thead{
+background-color:#DCDCDC ;
+
+
+}
+.tabela th, td{
+padding: 3px;
+border: 0px solid #CCCCCC;
+max-width: 150px;
+}
+.tabela thead tr th{
+	text-align: center;
+
+}
 #main-login2{
-	width: 120vw;
-	height: 200vh;
-	background: #D3D3D3;
+	width: 110vw;
+	height: 165vh;
+	background: #201b2c;
 	display: flex;
 	justify-content: center;
 	align-items: center;
 }
+
+
 .left-login{
 	width: 50vw;
 	height: 100vh;
@@ -50,12 +78,12 @@ body * {
 	width: 35vw;
 }
 #left-login-image{
-	width: 60vw;
+	width:65vw;
 }
 
 .right-login{
 	width: 50vw;
-	height: 100vh;
+	height: 50vh;
 	display: flex;
 	justify-content: center;
 	align-items: center;
@@ -74,34 +102,29 @@ body * {
 	align-items: center;
 	flex-direction: column;
 	padding: 30px 35px;
-	background: #FFFFFF;
+	background: #2f2841;
+	border-radius: 20px;
+	box-shadow: 0px 10px 40px #00000056;
+}
+#card-login{
+	width: 60%;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-direction: column;
+	padding: 30px 35px;
+	background: #2f2841;
 	border-radius: 20px;
 	box-shadow: 0px 10px 40px #00000056;
 }
 
 
 .card-login > h1{
-color: #074f8a;
+color: #00ff88;
 font-weight: 800;
 margin: 0;
 text-align: center;
 
-}
-
-.tabela{
-	display: block;
-	background-color:#00BFFF ;
-	box-shadow: 0px 0px 3px rgba(0, 0, 0, 0.3);
-	border-collapse: collapse;
-	max-height: 400px;
-	overflow-x: hidden;
-
-}
-
-.tabela-tittle{
-	display: block;
-	padding: 20px;
-	background-color:#D3D3D3 ;
 }
 
 .textfield{
@@ -113,11 +136,22 @@ text-align: center;
 	margin: 10px 0px;
 
 
+}
+
+.letra{
+
+	color: #00ff88;
+	font-size: 18px;
 
 }
+
+#logout-btn{
+	color: #8B0000;
+	font-size: 16px;
+}
+
 #mensagem_error{
 	width: 100%;
-	color: #00ff88;
 	display: flex;
 	flex-direction: column;
 	align-items: flex-start;
@@ -126,16 +160,12 @@ text-align: center;
 	text-align: center;
 
 }
-
-
-
-
 .textfield > input{
 	width: 100%;
 	border:none ;
 	border-radius: 10px;
 	padding: 15px;
-	background: #A9A9A9;
+	background: #514869;
 	color: #f0ffffde;
 	font-size: 12pt;
 	box-shadow: 0px 10px 40px #00000056;
@@ -146,7 +176,7 @@ text-align: center;
 
 
 .textfield > label{
-	color: #1C1C1C;
+	color: #f0ffffde;
 	margin-bottom: 10px;
 }
 
@@ -166,49 +196,44 @@ text-align: center;
 	text-transform: uppercase;
 	font-weight: 800;
 	letter-spacing: 3px;
-	color: #ffffff;
-	background: #B22222;
+	color: #2b134b;
+	background: #00ff88;
 	cursor: pointer;
 	box-shadow: 0px 10px 40px -12px #00ff8052;
 	text-align: center;
 	
 
 }
-#btn-login{
 
-	color: #074f8a;
-	text-transform: uppercase;
-	cursor: pointer;
-	text-align: center;
-	font-size: 16px ;
-	font-weight:  bolder;
-	
-
-
-
-
-
-}
-
-#btn-login4{
-
-	color: #32CD32;
-	text-transform: uppercase;
-	cursor: pointer;
-	text-align: center;
-	font-size: 16px ;
-	font-weight:  bolder;
-
-}
 .btn-login2{
 
-	color: #DC143C ;
+	color: #00ff88 ;
 	text-transform: uppercase;
 	cursor: pointer;
 	text-align: center;
 	font-size: 16px ;
 	font-weight:  bolder;
 	outline: none;
+}
+
+.btn-login3{
+	width: 20%;
+	padding: 5px 0px;
+	border: none ;
+	border-radius: 8px;
+	outline: none;
+	text-transform: uppercase;
+	font-weight: bolder;
+	color: #2b134b;
+	background: #00ff88;
+	cursor: pointer;
+	text-align: center;
+	font-size:10px;
+
+
+
+
+
 }
 
 
@@ -235,7 +260,7 @@ text-align: center;
 	height: auto;
 	}
 .right-login{
-	width: 100%;
+	width: 150%;
 	height: auto;
 	}
 .left-login-image{
@@ -243,7 +268,7 @@ text-align: center;
 
 	}
 	.card-login{
-		width: 90%;
+		width: 120%;
 
 	}
 }

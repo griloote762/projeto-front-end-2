@@ -1,89 +1,91 @@
+
 <!DOCTYPE html>
 <html>
 <head>
+	
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
-	
+	<link rel="icon" type="image/png" href="img/favicon.png">
+	<link rel="stylesheet" href="estilos.css">
 	<title>Faça seu Cadastro</title>
 	
-	<meta charset="utf-8">
-	<meta name="viewport" content="width=device-width, initial-scale=1">
-	<title>Cadastro</title>
-
-	<link rel="stylesheet"  href="estilos.css">
 </head>
-<STYLE> a  {text-decoration: none;} </STYLE>
 <body>
 	
-	<form method="POST" action="">
-		 <a href="index.html" button class="btn-home">Home</a>
- 
-
-  
-      
-    <div class="main-login">
-		<div class="left-login">
-			<h1>Faça seu Cadastro Aqui!</h1>
-			<img src="loginanimado.svg" class="left-login-image" alt="login animado">
-		</div>
+	<form method="POST">
+		
+		<div id="main-login2">
 		
 		<div class="right-login">
 			<div class="card-login">
-				<h1>Cadastro</h1>
-				<div class="textfield">
-				<label for="nome">Nome</label>
-				<input type="text" name="nome" placeholder=  "*Insira seu Nome" required autofocus></input>
+				<h1>Cadastre sua Conta</h1>
+			<div class="textfield">
+					<label for="inputnome">Nome</label> <input type="text" id="inputnome" name="Nome" placeholder="Insira seu Nome*" minlength="15" maxlength="60" required autofocus />
 			</div>
 			<div class="textfield">
-				<label for="">Data de Nascimento</label>
-				<input type="date" name="inputDTNASC"  required autofocus></input>
+				<label for="inputdata">Data de Nascimento</label> <input type="date" id="inputdata" name="data" required autofocus />
+			</div>
+			
+			<div class="textfield">
+			
+				<label for="sexo">Sexo: 
+                <input type="radio" id="Masculino" name="Sexo" > Masculino
+                <input type="radio" id="Feminino" name="Sexo"  > Feminino
+				<input type="radio" id="Outros" name="Sexo" > Outros
+			
 			</div>
 
 			<div class="textfield">
-				<label for="nomedaMae">Nome da Mãe</label>
-				<input type="text" name="nomedaMae" placeholder=  "*Insira o Nome da Mãe" required autofocus></input>
+				<label for="inputnomemae">Nome da Mãe</label> <input type="text" id="inputnomemae" name="Nomemae" placeholder="Insira seu Nome da Mãe*" required autofocus />
 			</div>
 
 			<div class="textfield">
-				<label for="CPF">CPF</label>
-				<input type="text" name="CPF" placeholder=  "*Insira seu CPF" required autofocus maxlength="11"></input>
+				<label for="CPF">CPF</label> <input type="text" id="CPF" name="numcpf" placeholder="Insira seu CPF*"  maxlength="11" required autofocus />
+				
 			</div>
 
 			<div class="textfield">
-				<label for="telcelular">Telefone Celular</label>
-				<input type="number" name="telcelular" placeholder="*Insira seu Celular" required autofocus ></input>
+			
+				<label for="Telcel">Telefone Celular</label> <input type="text" id="Telcel" name="celular" placeholder="Insira seu Telefone Celular*"  maxlength="11" required autofocus />
+				
 			</div>
 
-				<div class="textfield">
-				<label for="telfixo">Telefone Fixo</label>
-				<input type="number" name="telfixo" placeholder="Opcional"></input>
+		
+			<div class="textfield">
+			
+				<label for="Telfixo">Telefone Fixo</label> <input type="text" id="Telfixo" name="fixo" placeholder="Insira seu Telefone Fixo*"  maxlength="11" required autofocus />
+				
 			</div>
 
 			<div class="textfield">
-				<label for="endereco">Endereço</label>
-				<input type="text" name="endereco" placeholder="*Insira seu Endereço" required autofocus></input>
+				<label for="Endcomp">Endereço Completo</label> <input type="text" id="Endcomp" name="endereco" placeholder="Insira seu Endereço Completo*" required autofocus />
+			</div>
+				
+			
+
+			<div class="textfield">
+				<label for="User">Login de Usuário</label> <input type="text" id="User" name="Name" placeholder="Insira seu Login de Usuário*" required autofocus />
+			</div>
+			
+			<div class="textfield">
+				<label for="senha">Senha</label> <input type="password" id="senha" name="senhausu" placeholder="Insira sua Senha*" required autofocus />
+				
+			</div>
+
+			<div class="textfield">
+				<label for="confsenha">Confirme a senha</label> <input type="password" id="confsenha" name="csenha" placeholder="Confirme sua senha*" required autofocus />
 			</div>
 				
 
-			<div class="textfield">
-				<label for="loginusuario">Login de Usúario</label>
-				<input type="text" name="loginusuario" placeholder="*Insira seu Login de Usuário" required autofocus></input>
-				</div>
-			<div class="textfield">
-				<label for="senha">Senha</label>
-				<input type="password" name="senha" placeholder="Insira sua Senha"></input>
-			</div>
+				<input type="submit"class="btn-login" value="Cadastrar"></input>
+				<input type="reset" value="limpar" class="btn-login"></input>
 				
+				
+				<a href="index.html" class="btn-login">Voltar</a>
 
-				<input type="submit"class="btn-login"></input>
-				<input type="reset" name="Limpar" value="limpar" class="btn-login"></input>
-			</div>
 		</div>	
 	</div>
 
-
-
-				
 
 </form>
 </body>

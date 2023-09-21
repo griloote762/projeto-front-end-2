@@ -1,35 +1,45 @@
+
 <!DOCTYPE html>
+
 <html>
 <head>
+
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="icon" type="image/png" href="img/favicon.png">
 	<link rel="stylesheet"  href="estilos.css">
-	<title>Login</title>
+	<title>Área do Cliente - Telecall</title>
+
 </head>
-<STYLE> a {text-decoration: none;} </STYLE>
+
 <body>
-	
+<form  method="POST" >
 	<div class="main-login">
-		<div class="left-login">
-			<h1>Faça seu login <br> e entre para o nosso time</h1>
-			<img src="loginanimado.svg" class="left-login-image" alt="login animado">
-		</div>
 		
 		<div class="right-login">
+			
 			<div class="card-login">
-				<h1>LOGIN</h1>
-				<div class="textfield">
-				<label for="usuario">Usuário</label>
-				<input type="text" name="usuario" placeholder=  "Insira seu Usuário">
-			</div>
-			<div class="textfield">
-				<label for="senha">Senha</label>
-				<input type="password" name="senha" placeholder="Insira sua Senha">
-			</div>
+				<img src="img/logo.png" id="logo telecall" alt="logotc">
 
-				<button class="btn-login">Login</button>
-				<button class="btn-login">Cadastra-se</button>
- 
+				
+				
+				
+				<h1>Login</h1>
+				
+				<div class="textfield">
+					<label for="User">Login de Usuário</label> <input type="text" id="User" name="Name" placeholder="Insira seu Login de Usuário" required autofocus />
+				</div>
+				
+				<div class="textfield">
+					<label for="senha">Senha</label> <input type="password" id="senha" name="senhausuario" placeholder="Insira sua Senha" required autofocus />
+					
+				</div>
+
+			<input type="submit" value="Entrar" class="btn-login"/>
+			<a href="cadastro1.html" id="btn-login">Não tem cadastro ainda? Clique aqui!</a>
+		</form>
+	
+			
 		</div>	
 	</div>
 
